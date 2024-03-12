@@ -187,11 +187,11 @@
   ],
   "projects": [
     {
-      "name": "mars.codes",
+      "name": "encriptador de texto",
       "isActive": true,
-      "description": "Historia interactiva con retos de programación para viajar a Marte",
-      "highlights": ["Elige tu propia aventura", "En desarrollo"],
-      "url": "https://mars.codes"
+      "description": "Decidí crearlo como reto y forma iteractiva de aprendizaje, fue un desafio que me gustó desarrollar debido a que lo integré a una de mis tecnologías favoritas 'React'",
+      "highlights": ["Encriptar", "Desencriptar", "Copiar encriptado"],
+      "url": "https://andresmgdev.github.io/encriptador-de-texto/"
     }
   ]
 }
