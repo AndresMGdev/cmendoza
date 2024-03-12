@@ -1,0 +1,173 @@
+---
+import { basics } from "@cv"
+import Section from "@/components/Section.astro"
+import Mail from "@/icons/Mail.astro"
+import Phone from "@/icons/Phone.astro"
+import X from "@/icons/X.astro"
+import LinkedIn from "@/icons/LinkedIn.astro"
+import GitHub from "@/icons/GitHub.astro"
+import WorldMap from "@/icons/WorldMap.astro"
+
+const { name, label, image, location, profiles, phone, email } = basics
+const { city, region } = location
+
+const SOCIAL_ICONS: Record<string, any> = {
+  GitHub,
+  LinkedIn,
+  X,
+}
+
+const linkedInfo = profiles.find(({ network }) => network === "LinkedIn")
+const linkedUrl = linkedInfo?.url
+
+const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
+---
+
+<Section>
+  <div class="container">
+    <div class="info">
+      <h1 class="dark:text-white">{name}</h1>
+      <h2 class="text-[#444] dark:text-white/70">{label}</h2>
+      <span class="text-[#666] dark:text-white/70">
+        <WorldMap />
+        {city}, {region}
+      </span>
+      <footer class="print">
+        {printInfo}
+      </footer>
+      <footer class="no-print">
+        {
+          email && (
+            <a
+              href={`mailto:${email}`}
+              title={`Enviar un correo electrónico a ${name} al correo ${email}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Mail />
+            </a>
+          )
+        }
+        {
+          phone && (
+            <a
+              href={`tel:${phone}`}
+              title={`Llamar por teléfono a ${name} al número ${phone}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Phone />
+            </a>
+          )
+        }
+        {
+          profiles.map(({ network, url, username }) => {
+            const Icon = SOCIAL_ICONS[network]
+
+            return (
+              <a
+                href={url}
+                title={`Visitar el perfil de ${name} en ${network}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon />
+              </a>
+            )
+          })
+        }
+      </footer>
+    </div>
+    <figure>
+      <button title="toggleTheme" onclick="toggleTheme()" class=" bg-gray/0 rounded-full opacity-75 shadow">
+        <div class="rounded-full w-6 h-6 bg-[#252850] dark:bg-gradient-to-r dark:from-amber-200 dark:to-yellow-500 drop-shadow-xl">
+          <div class="rounded-full w-4 h-4 bg-[#e4e4f4] dark:bg-black/0">
+          </div>
+        </div>
+      </button>
+
+      <img src={image} alt={name} class="image-me" />
+    </figure>
+  </div>
+</Section>
+
+<style>
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-right: 32px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-wrap: balance;
+  }
+
+  img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 128px;
+    border-radius: 16px;
+    -webkit-filter: drop-shadow(1px 1px 1px #5c5);
+  filter: drop-shadow(1px 1px 10px rgba(188, 189, 188, 0.623));
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.85rem;
+    letter-spacing: -0.05rem;
+  }
+
+  footer {
+    color: #555;
+    font-size: 0.65rem;
+    display: flex;
+    gap: 4px;
+    margin-top: 8px;
+  }
+
+  footer a {
+    color: #777;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    padding: 4px;
+    height: 32px;
+    width: 32px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+
+  footer a:hover {
+    background: #eee;
+    border: 1px solid #ddd;
+  }
+
+  @media (max-width: 650px) {
+    .container{
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .image-me {
+      /* display: none; */
+    }
+  }
+</style>
