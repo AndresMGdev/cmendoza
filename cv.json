@@ -187,7 +187,7 @@
   ],
   "projects": [
     {
-      "name": "Encriptador de texto",
+      "name": "Encrypt",
       "isActive": true,
       "description": "Decidí crearlo como reto y forma iteractiva de aprendizaje, fue un desafio que me gustó desarrollar debido a que lo integré a una de mis tecnologías favoritas 'React'",
       "highlights": ["Encriptar", "Desencriptar", "Copiar encriptado"],
