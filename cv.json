@@ -189,9 +189,9 @@
     {
       "name": "Encrypt",
       "isActive": true,
-      "description": "Decidí crearlo como reto y forma iteractiva de aprendizaje, fue un desafio que me gustó desarrollar debido a que lo integré a una de mis tecnologías favoritas 'React'",
+      "description": "Decidí crear el encriptador como reto y forma iteractiva de aprendizaje, fue un desafio que me gustó desarrollar debido a que lo integré a una de mis tecnologías favoritas 'React'",
       "highlights": ["Encriptar", "Desencriptar", "Copiar encriptado"],
-      "url": "https://andresmgdev.github.io/encriptador-de-texto/"
+      "url": "https://andresmgdev.github.io/encrypt/"
     }
   ]
 }
