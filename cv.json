@@ -201,7 +201,7 @@
       "name": "ProStock",
       "isActive": true,
       "description": "Creado como un proyecto del bootcamp Talento Tech, e incluye secciones importantes como Inicio, Productos, Perfil, Iniciar sesión y Registrarse, los cuales permiten la navegación dentro de esta aplicación construida en Next.js v14 y estilizada con Tailwind CSS.",
-      "highlights": ["Invenntario", "Login", "Singin", "Logout"],
+      "highlights": ["Invenntario", "Login", "Signin", "Logout"],
       "url": "https://prostock.vercel.app/"
     }
   ]

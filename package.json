@@ -9,7 +9,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "echo > dist/.nojekyll && gh-pages -d dist"
   },
   "dependencies": {
     "@astrojs/check": "^0.4.1",
