@@ -55,7 +55,7 @@
   ],
   "education": [
     {
-      "institution": "Corporación Unificada de Estudio Superior",
+      "institution": "Corporación Unificada Nacional de Estudio Superior",
       "url": "https://www.cun.edu.co/",
       "area": "Ingeniero de Sistemas",
       "studyType": "Undergraduate",
@@ -107,9 +107,19 @@
       "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"]
     },
     {
+      "name": "TypeScript",
+      "level": "Intermedio",
+      "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"]
+    },
+    {
       "name": "React",
       "level": "Intermedio",
       "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"]
+    },
+    {
+      "name": "Next",
+      "level": "Intermedio",
+      "keywords": ["Desarrollo Web", "Frontend", "Backend", "JavaScript Framework"]
     },
     {
       "name": "Tailwind",
@@ -130,12 +140,6 @@
       "name": "Spring Boot",
       "level": "Intermedio",
       "keywords": ["Desarrollo Web", "Backend", "Java", "Servidor"]
-    },
-    
-    {
-      "name": "Golang",
-      "level": "Principiante",
-      "keywords": ["Desarrollo Web", "Backend", "Servidor"]
     },
     {
       "name": "MySQL",
@@ -192,6 +196,13 @@
       "description": "Decidí crear el encriptador como reto y forma iteractiva de aprendizaje, fue un desafio que me gustó desarrollar debido a que lo integré a una de mis tecnologías favoritas 'React'",
       "highlights": ["Encriptar", "Desencriptar", "Copiar encriptado"],
       "url": "https://andresmgdev.github.io/encrypt/"
+    },
+    {
+      "name": "ProStock",
+      "isActive": true,
+      "description": "Creado como un proyecto del bootcamp Talento Tech, e incluye secciones importantes como Inicio, Productos, Perfil, Iniciar sesión y Registrarse, los cuales permiten la navegación dentro de esta aplicación construida en Next.js v14 y estilizada con Tailwind CSS.",
+      "highlights": ["Invenntario", "Login", "Singin", "Logout"],
+      "url": "https://prostock.vercel.app/"
     }
   ]
 }
