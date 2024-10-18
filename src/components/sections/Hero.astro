@@ -61,7 +61,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
           )
         }
         {
-          profiles.map(({ network, url, username }) => {
+          profiles.map(({ network, url }) => {
             const Icon = SOCIAL_ICONS[network]
 
             return (
@@ -123,8 +123,10 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
     width: 128px;
     border-radius: 16px;
     -webkit-filter: drop-shadow(1px 1px 1px #5c5);
-  filter: drop-shadow(1px 1px 10px rgba(188, 189, 188, 0.623));
-  }
+    filter: drop-shadow(1px 1px 4px rgba(188, 189, 188, 0.623));
+    mask-image: linear-gradient(to bottom, black 95%, transparent 100%);
+    mask-border: 10px solid transparent; /* Añade un borde de máscara para suavizar */
+}
 
   span {
     display: flex;
