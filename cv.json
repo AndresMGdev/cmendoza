@@ -191,6 +191,7 @@
   ],
   "projects": [
     {
+      "imageProject": "/encrypt.png",
       "name": "Encrypt",
       "isActive": true,
       "description": "Decidí crear el encriptador como reto y forma iteractiva de aprendizaje, fue un desafio que me gustó desarrollar debido a que lo integré a una de mis tecnologías favoritas 'React'",
@@ -198,6 +199,7 @@
       "url": "https://andresmgdev.github.io/encrypt/"
     },
     {
+      "imageProject": "/prostock.png",
       "name": "ProStock",
       "isActive": true,
       "description": "Creado como un proyecto del bootcamp Talento Tech, e incluye secciones importantes como Inicio, Productos, Perfil, Iniciar sesión y Registrarse, los cuales permiten la navegación dentro de esta aplicación construida en Next.js v14 y estilizada con Tailwind CSS.",

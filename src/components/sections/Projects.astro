@@ -7,12 +7,18 @@ import { projects } from "@cv"
 <Section title="Proyectos">
   <ul>
     {
-      projects.map(({ url, description, highlights, name, isActive }) => {
+      projects.map(({ url, description, highlights, name, isActive, imageProject }) => {
         return (
           <li>
             <article class="border border-[#f2f2f2] bg-white  dark:bg-black/15">
               <header>
                 <h3>
+                  <img 
+                    src={`/cmendoza${imageProject}`} 
+                    alt={name} 
+                    class="border border-[#f2f2f2] rounded" 
+                  />
+
                   <a href={url} title={`Ver el proyecto ${name}`} target="_blank" class="text-[#111] dark:text-white">
                     {name}
                   </a>
