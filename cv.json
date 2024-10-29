@@ -194,17 +194,25 @@
       "imageProject": "/encrypt.png",
       "name": "Encrypt",
       "isActive": true,
-      "description": "Decidí crear el encriptador como reto y forma iteractiva de aprendizaje, fue un desafio que me gustó desarrollar debido a que lo integré a una de mis tecnologías favoritas 'React'",
-      "highlights": ["Encriptar", "Desencriptar", "Copiar encriptado"],
+      "description": "Creé el encriptador como un reto y una forma interactiva de aprendizaje. Este desafío me resultó apasionante, ya que lo integré con una de mis tecnologías favoritas: React.",
+      "highlights": ["JavaScript", "React", "css", "html"],
       "url": "https://andresmgdev.github.io/encrypt/"
     },
     {
       "imageProject": "/prostock.png",
       "name": "ProStock",
       "isActive": true,
-      "description": "Creado como un proyecto del bootcamp Talento Tech, e incluye secciones importantes como Inicio, Productos, Perfil, Iniciar sesión y Registrarse, los cuales permiten la navegación dentro de esta aplicación construida en Next.js v14 y estilizada con Tailwind CSS.",
-      "highlights": ["Invenntario", "Login", "Signin", "Logout"],
+      "description": "Desarrollado para la gestión de inventario, este proyecto incluye secciones clave como Inicio, Productos, Perfil, Iniciar sesión y Registrarse, facilitando una navegación fluida en la aplicación construida con Next.js v14 y estilizada con Tailwind CSS.",
+      "highlights": ["TypeScript", "Nextjs", "Tailwindcss", "Daisyui"],
       "url": "https://prostock.vercel.app/"
+    },
+    {
+      "imageProject": "/agriweigh.png",
+      "name": "Agriweigh",
+      "isActive": true,
+      "description": "Aplicación web para gestionar el peso del ganado, caballos y cerdos, permitiendo registrar y visualizar datos importantes como edad, código, longitud, circunferencia torácica y el calculo del peso estimado de las vacas, y descargar un informe pdf. Facilita tomar el peso sin bascula para los pequeños ganaderos.",
+      "highlights": ["Java", "Spring", "Thymeleaf", "Tailwindcss", "ItexPDF"],
+      "url": "https://agriweigh-latest.onrender.com/"
     }
   ]
 }
